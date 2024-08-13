@@ -1,6 +1,6 @@
-## Neural Networks and Large Language Models
+## Generative and Large Language Models
 
-This repository contains various projects and experiments related to neural networks and large language models (LLMs). It includes implementations, fine-tuning techniques, and deployment strategies for state-of-the-art models.
+This repository contains various projects and experiments related to generative and large language models (LLMs). It includes implementations, fine-tuning techniques, and deployment strategies for state-of-the-art models.
 
 ## Repository Structure
 
@@ -39,3 +39,18 @@ This repository contains various projects and experiments related to neural netw
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/SahilBarbade1203/Neural_Networks_and_Large_Language_Models.git
+   ```
+2. **Navigate to the Desired Directory:
+   ```bash
+   cd Neural_Networks_and_Large_Language_Models
+   ```
+3. **Install Dependencies:
+Ensure you have the necessary dependencies installed. You can use a requirements.txt or install them manually.
+
+4. **Run Notebooks:
+Open and run the Jupyter notebooks as needed for different projects.
+
+Contributing
+
+Feel free to fork this repository and submit pull requests with improvements or additional features.
+For any questions or issues, please open an issue on GitHub or contact me directly.
