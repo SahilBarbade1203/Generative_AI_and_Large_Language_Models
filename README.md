@@ -1,202 +1,59 @@
----
-base_model: google/flan-t5-base
-library_name: peft
----
+## Generative and Large Language Models
 
-# Model Card for Model ID
+This repository contains various projects and experiments related to generative and large language models (LLMs). It includes implementations, fine-tuning techniques, and deployment strategies for state-of-the-art models.
 
-<!-- Provide a quick summary of what the model is/does. -->
+## Repository Structure
 
+- **LLM_Finetuning/**: Contains notebooks and scripts for fine-tuning large language models, including instruction-based fine-tuning and parameter-efficient fine-tuning (PEFT).
+  - `Generative_AI_Finetuning.ipynb`: Notebook for generative AI and LLM fine-tuning.
 
+- **dialogue-summary-training-1723532164/**: Checkpoints and logs for dialogue summarization training runs.
+  - `Aug13_06-56-04_c7eabaa1b850/`: Training run data.
 
-## Model Details
+- **instruct_model/**: Training artifacts for instruction-based models.
+  - `training_args.bin`: Configuration file for the instruct model.
 
-### Model Description
+- **peft-dialogue-summary-checkpoint-local/**: Checkpoints for dialogue summarization using PEFT.
+  - `checkpoint files`: Model checkpoints.
 
-<!-- Provide a longer summary of what this model is. -->
+- **Human-Centric Dialogue Summarization.ipynb**: Notebook demonstrating the development of a human-centric dialogue summarization model, including fine-tuning and performance metrics.
 
+- **Object_Detection(Pytorch).ipynb**: Notebook for object detection using PyTorch.
 
+- **Sentimental_Analysis.py**: Script for sentiment analysis on IMDB reviews using vanilla RNN.
 
-- **Developed by:** [More Information Needed]
-- **Funded by [optional]:** [More Information Needed]
-- **Shared by [optional]:** [More Information Needed]
-- **Model type:** [More Information Needed]
-- **Language(s) (NLP):** [More Information Needed]
-- **License:** [More Information Needed]
-- **Finetuned from model [optional]:** [More Information Needed]
+- **Streamlit_Deployment.ipynb**: Notebook for deploying models using Streamlit.
 
-### Model Sources [optional]
+- **README.md**: This file.
 
-<!-- Provide the basic links for the model. -->
+## Key Features
 
-- **Repository:** [More Information Needed]
-- **Paper [optional]:** [More Information Needed]
-- **Demo [optional]:** [More Information Needed]
+- **LLM Fine-Tuning**: Techniques for fine-tuning large language models, including instruction-based methods and PEFT.
+- **Human-Centric Summarization**: Implementations for generating human-like summaries using advanced LLMs.
+- **Object Detection**: PyTorch-based object detection models.
+- **Sentiment Analysis**: RNN-based sentiment analysis on IMDB reviews.
+- **Streamlit Deployment**: Guides and examples for deploying models with Streamlit.
 
-## Uses
+## Getting Started
 
-<!-- Address questions around how the model is intended to be used, including the foreseeable users of the model and those affected by the model. -->
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/SahilBarbade1203/Neural_Networks_and_Large_Language_Models.git
+   ```
+2. **Navigate to the Desired Directory:
+   ```bash
+   cd Neural_Networks_and_Large_Language_Models
+   ```
+3. **Install Dependencies:
+Ensure you have the necessary dependencies installed. You can use a requirements.txt or install them manually.
 
-### Direct Use
+4. **Run Notebooks:
+Open and run the Jupyter notebooks as needed for different projects.
 
-<!-- This section is for the model use without fine-tuning or plugging into a larger ecosystem/app. -->
+## Streamlit Deployment
+![streamlit_interface](https://github.com/user-attachments/assets/f2c7a0a1-28f5-4168-b64b-5ea02b860044)
 
-[More Information Needed]
+## Contributing
 
-### Downstream Use [optional]
-
-<!-- This section is for the model use when fine-tuned for a task, or when plugged into a larger ecosystem/app -->
-
-[More Information Needed]
-
-### Out-of-Scope Use
-
-<!-- This section addresses misuse, malicious use, and uses that the model will not work well for. -->
-
-[More Information Needed]
-
-## Bias, Risks, and Limitations
-
-<!-- This section is meant to convey both technical and sociotechnical limitations. -->
-
-[More Information Needed]
-
-### Recommendations
-
-<!-- This section is meant to convey recommendations with respect to the bias, risk, and technical limitations. -->
-
-Users (both direct and downstream) should be made aware of the risks, biases and limitations of the model. More information needed for further recommendations.
-
-## How to Get Started with the Model
-
-Use the code below to get started with the model.
-
-[More Information Needed]
-
-## Training Details
-
-### Training Data
-
-<!-- This should link to a Dataset Card, perhaps with a short stub of information on what the training data is all about as well as documentation related to data pre-processing or additional filtering. -->
-
-[More Information Needed]
-
-### Training Procedure
-
-<!-- This relates heavily to the Technical Specifications. Content here should link to that section when it is relevant to the training procedure. -->
-
-#### Preprocessing [optional]
-
-[More Information Needed]
-
-
-#### Training Hyperparameters
-
-- **Training regime:** [More Information Needed] <!--fp32, fp16 mixed precision, bf16 mixed precision, bf16 non-mixed precision, fp16 non-mixed precision, fp8 mixed precision -->
-
-#### Speeds, Sizes, Times [optional]
-
-<!-- This section provides information about throughput, start/end time, checkpoint size if relevant, etc. -->
-
-[More Information Needed]
-
-## Evaluation
-
-<!-- This section describes the evaluation protocols and provides the results. -->
-
-### Testing Data, Factors & Metrics
-
-#### Testing Data
-
-<!-- This should link to a Dataset Card if possible. -->
-
-[More Information Needed]
-
-#### Factors
-
-<!-- These are the things the evaluation is disaggregating by, e.g., subpopulations or domains. -->
-
-[More Information Needed]
-
-#### Metrics
-
-<!-- These are the evaluation metrics being used, ideally with a description of why. -->
-
-[More Information Needed]
-
-### Results
-
-[More Information Needed]
-
-#### Summary
-
-
-
-## Model Examination [optional]
-
-<!-- Relevant interpretability work for the model goes here -->
-
-[More Information Needed]
-
-## Environmental Impact
-
-<!-- Total emissions (in grams of CO2eq) and additional considerations, such as electricity usage, go here. Edit the suggested text below accordingly -->
-
-Carbon emissions can be estimated using the [Machine Learning Impact calculator](https://mlco2.github.io/impact#compute) presented in [Lacoste et al. (2019)](https://arxiv.org/abs/1910.09700).
-
-- **Hardware Type:** [More Information Needed]
-- **Hours used:** [More Information Needed]
-- **Cloud Provider:** [More Information Needed]
-- **Compute Region:** [More Information Needed]
-- **Carbon Emitted:** [More Information Needed]
-
-## Technical Specifications [optional]
-
-### Model Architecture and Objective
-
-[More Information Needed]
-
-### Compute Infrastructure
-
-[More Information Needed]
-
-#### Hardware
-
-[More Information Needed]
-
-#### Software
-
-[More Information Needed]
-
-## Citation [optional]
-
-<!-- If there is a paper or blog post introducing the model, the APA and Bibtex information for that should go in this section. -->
-
-**BibTeX:**
-
-[More Information Needed]
-
-**APA:**
-
-[More Information Needed]
-
-## Glossary [optional]
-
-<!-- If relevant, include terms and calculations in this section that can help readers understand the model or model card. -->
-
-[More Information Needed]
-
-## More Information [optional]
-
-[More Information Needed]
-
-## Model Card Authors [optional]
-
-[More Information Needed]
-
-## Model Card Contact
-
-[More Information Needed]
-### Framework versions
-
-- PEFT 0.12.0
+Feel free to fork this repository and submit pull requests with improvements or additional features.
+For any questions or issues, please open an issue on GitHub or contact me directly.
