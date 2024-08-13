@@ -50,7 +50,10 @@ Ensure you have the necessary dependencies installed. You can use a requirements
 4. **Run Notebooks:
 Open and run the Jupyter notebooks as needed for different projects.
 
-Contributing
+## Streamlit Deployment
+![streamlit_interface](https://github.com/user-attachments/assets/f2c7a0a1-28f5-4168-b64b-5ea02b860044)
+
+## Contributing
 
 Feel free to fork this repository and submit pull requests with improvements or additional features.
 For any questions or issues, please open an issue on GitHub or contact me directly.
